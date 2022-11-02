@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+<!--        https://learn.microsoft.com/en-us/windows/apps/desktop/modernize/desktop-to-uwp-enhance-->
+        <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework> 
+        <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.2.104-beta">
+<!--        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets> //https://github.com/microsoft/cswin32#usage -->
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+    </ItemGroup>
+
+</Project>
